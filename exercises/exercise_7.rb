@@ -9,4 +9,15 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+@store4 = Store.find_by(id: 4)
+
+store = Store.create(name: "DontCreateStr")
+
+puts store.errors.full_messages
+
+# puts "enter a store name to create a new row in db"
+# employee = gets.chomp
+
+# new_employee = Employee.new(first_name: employee, hourly_rate: 10)
+# new_employee.valid?
+# puts new_employee.errors.messages
